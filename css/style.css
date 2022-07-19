@@ -1,15 +1,16 @@
 /* P A G E  I N D E X . H T M L */
 /* PAGE PORTFOLIO */
 /* palitra:
-
-
 колір основного тексту: color: #000 - primary-text-color
-
 колір вторичного тексту: #212121  - h2-text-color
-
 колір посилань:  color: #2196f3
-
 колір посилань(номер тел. пошта): #757575
+
+
+бекграунт колор секцій переваги та what_we_doing:
+#E5E5E5
+
+
 
 футер:
 лого: 
@@ -19,10 +20,29 @@ rgba(255, 255, 255, 1)
 rgba(255, 255, 255, 1)
 колір  посилань(номер тел. пошта)-
 rgba(255, 255, 255, 0.6)
-
-
-
 */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.img {
+  width: 270px;
+  height: 260px;
+  margin-bottom: 30px;
+}
+button {
+  cursor: pointer;
+}
 :root {
   --primary-text-color: #000;
   --h2-h3-text-color: #212121;
@@ -35,47 +55,142 @@ rgba(255, 255, 255, 0.6)
 
 body {
   color: var(--primary-text-color);
-  font-family: "Roboto", "sans-serif";
+  font-family: "Roboto";
   height: 100%;
 }
-.mainhead {
-  color: var(--white-main-color);
-  background-color: var(--back-ground-color);
-  /* font-family: "roboto"; */
-  /* font-style: normal; */
 
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  size: 44px;
-  line-height: 60px;
+/* ОФОРМЛЕННЯ */
+/* всі контейнери width: 1170px; */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
-/* головна кнопка
- */
+
+/* H E A D E R */
+.page-header-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  align-items: center;
+}
 .site-nav.current {
   color: var(--logo-color);
 }
+/* розсунення елементів навігації */
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+/* класс контакти хедера */
+.contact-nav {
+  display: flex;
+}
+.contact-items:not(:last-child) {
+  margin-right: 18px;
+}
+
+/* -------END--HEADER------------------------- */
+
+/* всі контейнери width: 1600px; */
+.container-wide {
+  max-width: 1630px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* КІНЕЦЬ ОФОРМЛЕННЯ */
+
+/* <!------------- HERO класс області ----------> */
+.HERO {
+  background-color: var(--back-ground-color);
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 200px 0px;
+}
+
+.mainhead {
+  display: flex;
+  text-align: center;
+  height: 120px;
+  color: var(--white-main-color);
+  justify-content: center;
+  letter-spacing: 0.06em;
+  line-height: 1.37;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 900;
+  margin: 0 auto;
+
+  margin-bottom: 35px;
+  max-width: 695px;
+  align-items: center;
+  /* font-style: normal; */
+}
+/* Кнопка HERO */
 .buttons-head-main {
+  display: flex;
   background-color: var(--logo-color);
   color: var(--white-main-color);
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
-  /* font-family: "Roboto"; */
+  border: var(--back-ground-color);
+  /* left: 700px;
+  top: 430px; */
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 .buttons-head-main:hover,
 .buttons-head-main:focus {
   background-color: var(--back-gtound-key-kolor);
 }
-/* кнопки керуванння */
+/* ----------------------------------- */
 
 /* оформлення h3 та опису */
+
+.all-perevagi {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* загальний клас для розміщення переваг */
+.perevaga {
+  /* display: flex; */
+  /* padding-right: 30px; */
+  width: 270px;
+  height: 101px;
+}
+/* розсунення елементів навігації */
+.menu-item-1:not(:last-child) {
+  padding-right: 30px;
+}
+
 .h3main-page {
   color: var(--h2-h3-text-color);
   /* font-family: "Roboto"; */
@@ -85,18 +200,26 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  margin-bottom: 10px;
 }
 .p-mainpage {
   /* font-family: "Roboto"; */
+  display: flex;
+  height: 75px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 24px;
   color: var(--color-link);
 }
-/* оформленян h2 */
+/* оформленян h2 чим ми займаємось */
+
 .h2-mainpage {
   /* font-family: "Roboto"; */
+  display: flex;
+  /* margin-bottom: 50px; */
+  justify-content: center;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -104,9 +227,70 @@ body {
   letter-spacing: 0.03em;
   color: var(--h2-h3-text-color);
 }
+.what_we_doing {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+  margin-top: 50px;
+}
+
 /* оформлення заголовків постерів та опису */
+
+/* фон */
+.comanda {
+  max-width: 1600px;
+  height: 648px;
+  background-color: #f5f4fa;
+}
+/* класс для заголовка H2 НАША КОМАНДА */
+.down {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+/* клас всіх карток */
+.kartoteka {
+  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* class для розташування карток */
+/* .kartochka { */
+/* display: flex; */
+/* padding-right: 30px; */
+/* width: 270px;
+  height: 101px; */
+
+/* учасники */
+/* класс постер */
+.poster {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* overflow: hidden; */
+  width: 270px;
+  height: 368px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.poster:not(:last-child) {
+  margin-right: 40px;
+}
+/* фото */
+
+.member-team {
+  width: 1170px;
+  height: 368px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ,імя, */
+
 .h3titleposter {
-  /* font-family: "Roboto"; */
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -114,15 +298,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--h2-h3-text-color);
 }
+/* чим замається */
 .opisposter {
-  /* font-family: "Roboto"; */
+  margin-top: 20px;
+  justify-content: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1875%;
   letter-spacing: 0.03em;
   color: var(--color-link);
 }
+/* --------------кінець класу постер---------- */
+/* класс приховування */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -134,6 +322,7 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
 /* відміняємо крапки списків */
 ul {
   list-style: none;
@@ -143,19 +332,10 @@ a {
   text-decoration: none;
   font-style: normal;
 }
-.logo_end {
-  color: var(--logo-color);
-  font-weight: bold;
-  font-size: 26px;
-  font-family: "Raleway";
-  line-height: 2.2475%;
-}
-.logo_end > span {
-  color: var(--white-main-color);
-}
 
 /* header, footer */
 .logo {
+  margin-right: 93px;
   color: var(--logo-color);
   font-weight: bold;
   font-size: 26px;
@@ -176,6 +356,7 @@ a {
   font-size: 14px;
   line-height: 100%;
 }
+
 .site-nav:hover,
 .site-nav:focus {
   color: var(--logo-color);
@@ -186,6 +367,9 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 102.5625%;
+  display: flex;
+  padding: 30px;
+  align-items: center;
 }
 .site-nav-contact-header:hover,
 .site-nav-contact-header:focus {
@@ -193,37 +377,77 @@ a {
 }
 /* кнопки керування постерами */
 .buttons-head {
-  /* color: #000; */
+  /* display: flex; */
+
+  color: var(--h2-h3-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 162.5%;
-  font-family: "Raleway";
+  line-height: 26px;
+  font-family: "Roboto";
   font-style: normal;
   cursor: pointer;
+  border: #ffffff;
+  border-radius: 4px;
+  background-color: #f5f4fa;
 }
 .buttons-head:hover,
 .buttons-head:focus {
   color: var(--white-main-color);
   background-color: var(--back-gtound-key-kolor);
 }
+
 /* назва постерів */
+
 .Portfolio-name-card {
+  font-family: "Roboto";
+  margin-top: 20px;
   color: var(--h2-h3-text-color);
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2%;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: left;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 20px;
 }
+
 /* опис постерів */
 .type-of-work {
   color: var(--color-link);
   /* font-weight: 400; */
-  font-size: 16px;
+  font-size: 12px;
   line-height: 187.5%;
+  text-align: left;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
+
 /* footer */
+.logo_end {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  color: var(--logo-color);
+  font-weight: bold;
+  font-size: 26px;
+  font-family: "Raleway";
+  line-height: 2.2475%;
+}
+.logo_end > span {
+  color: var(--white-main-color);
+}
 .foot {
-  height: 7.5%;
+  display: flex;
+  height: 252px;
+  max-width: 1600px;
   background-color: var(--back-ground-color);
+}
+.footer {
+  padding-left: 215px;
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
+  align-items: center;
 }
 .logo-foot {
   color: var(--logo-color);
@@ -249,4 +473,38 @@ a {
 .site-nav-contact-footer:hover,
 .site-nav-contact-footer:focus {
   color: var(--logo-color);
+}
+
+/* PORTFOLIO */
+/* клас встановлення межі */
+.hed {
+  border-bottom: Solid 1px #ececec;
+}
+/* розміщення контейнера main */
+.main-portfolio {
+  max-width: 1170px;
+  margin-top: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+}
+/* клас розміщення фільтрів сторінки */
+.filters {
+  /* width: 611px;
+  height: 64px;  */
+  display: flex;
+  margin-bottom: 34px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* клас для завдання бордерів */
+.cardmain {
+  border: solid 1px#eeeeee;
+}
+/* клас розміщення карток */
+.cards-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
 }

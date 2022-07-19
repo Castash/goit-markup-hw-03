@@ -4,95 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>MainPage</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="" class="logo">Web<span>Studio</span></a>
-        <ul>
-          <li>
-            <a href="./index.html" class="site-nav current">Студия</a>
+    <header class="hed">
+      <div class="container page-header-container">
+        <nav class="page-nav">
+          <a href="" class="logo">Web<span>Studio</span></a>
+          <ul class="site-nav">
+            <li class="menu-item">
+              <a href="./index.html" class="site-nav current">Студия</a>
+            </li>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="site-nav">Портфолио</a>
+            </li>
+            <li class="menu-item"><a href="" class="site-nav">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-nav">
+          <li class="contact-items">
+            <a href="tel:0961111111" class="site-nav-contact-header"
+              >+38 096 111 11 11</a
+            >
           </li>
-          <li><a href="./portfolio.html" class="site-nav">Портфолио</a></li>
-          <li><a href="" class="site-nav">Контакти</a></li>
+          <li class="contact-items">
+            <a href="mailto:info@devstudio.com" class="site-nav-contact-header"
+              >info@devstudio.com</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="tel:0961111111" class="site-nav-contact-header"
-            >+38 096 111 11 11</a
-          >
-        </li>
-        <li>
-          <a href="mailto:info@devstudio.com" class="site-nav-contact-header"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section>
-        <div class="container">
-          <h1 class="mainhead">
-            ЭФФЕКТИВНИЕ РЕШЕНИЯ <br />
-            ДЛЯ ВАШЕГО БИЗНЕСА
-          </h1>
-          <button type="button" class="buttons-head-main">
-            Заказать услугу
-          </button>
-        </div>
+      <!-- HERO -->
+      <section class="HERO">
+        <!-- <div class="container-hero"> -->
+        <h1 class="mainhead">ЭФФЕКТИВНИЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <button type="button" class="buttons-head-main">Заказать услугу</button>
+
+        <!-- </button> -->
+      </section>
+      <section class="container">
+        <h2 class="visually-hidden">преимущества</h2>
+        <ul class="all-perevagi">
+          <li class="menu-item-1 perevaga">
+            <h3 class="h3main-page">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+            <p class="p-mainpage">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+
+          <li class="menu-item-1 perevaga">
+            <h3 class="h3main-page">ПУНКТУАЛЬНОСТЬ</h3>
+            <p class="p-mainpage">
+              Задача организации, в особенности же рамки и место обучения кадров
+              <br />влечет за собой.
+            </p>
+          </li>
+
+          <li class="menu-item-1 perevaga">
+            <h3 class="h3main-page">ПЛАНИРОВАНИЕ</h3>
+            <p class="p-mainpage">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+
+          <li class="menu-item-1 perevaga">
+            <h3 class="h3main-page">СОВРЕМЕННИЕ ТЕХНОЛОГИИ</h3>
+            <p class="p-mainpage">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
       </section>
 
-      <section>
-        <div>
-          <h2 class="visually-hidden">преимущества</h2>
-          <ul>
-            <li>
-              <h3 class="h3main-page">Внимание к деталям</h3>
-              <p class="p-mainpage">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li>
-              <h3 class="h3main-page">Пунктуальность</h3>
-              <p class="p-mainpage">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li>
-              <h3 class="h3main-page">Планирование</h3>
-              <p class="p-mainpage">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li>
-              <h3 class="h3main-page">Современные технологии</h3>
-              <p class="p-mainpage">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
+      <section class="container">
         <h2 class="h2-mainpage">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="what_we_doing">
           <li>
             <img src="./img/box_1.jpeg" width="370" alt="box1" />
           </li>
@@ -104,51 +108,65 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="h2-mainpage">Наша команда</h2>
-        <ul>
-          <li>
-            <img
-              src="./img/team_card1.jpg"
-              width="270"
-              alt="Фото Игоря Демьяненко "
-            />
-            <h3 class="h3titleposter">Игорь Демьяненко</h3>
-            <p lang="en" class="opisposter">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./img/team_card2.jpg"
-              width="270"
-              alt="Фото Ольга Репина"
-            />
-            <h3 class="h3titleposter">Ольга Репина</h3>
-            <p lang="en" class="opisposter">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./img/team_card3.jpg"
-              width="270"
-              alt="Фото Николай Тарасов"
-            />
-            <h3 class="h3titleposter">Николай Тарасов</h3>
-            <p lang="en" class="opisposter">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./img/team_card4.jpg"
-              width="270"
-              alt="Фото Михаил Ермаков"
-            />
-            <h3 class="h3titleposter">Михаил Ермаков</h3>
-            <p lang="en" class="opisposter">UI Designer</p>
-          </li>
-        </ul>
+
+      <!-- C O M A N D A -->
+      <section class="container-wide">
+        <!-- div що описує весь section comandi -->
+        <div class="comanda">
+          <h2 class="h2-mainpage down">Наша команда</h2>
+          <ul class="kartoteka container">
+            <li class="poster">
+              <img
+                class="img"
+                src="./img/team_card1.jpg"
+                width="270"
+                alt="Фото Игоря Демьяненко "
+              />
+              <h3 class="h3titleposter">Игорь Демьяненко</h3>
+              <p lang="en" class="opisposter">Product Designer</p>
+            </li>
+
+            <li class="poster">
+              <img
+                class="img"
+                src="./img/team_card2.jpg"
+                width="270"
+                alt="Фото Ольга Репина"
+              />
+              <h3 class="h3titleposter">Ольга Репина</h3>
+              <p lang="en" class="opisposter">Frontend Developer</p>
+            </li>
+
+            <li class="poster">
+              <img
+                class="img"
+                src="./img/team_card3.jpg"
+                width="270"
+                alt="Фото Николай Тарасов"
+              />
+              <h3 class="h3titleposter">Николай Тарасов</h3>
+              <p lang="en" class="opisposter">Marketing</p>
+            </li>
+            <li class="poster">
+              <img
+                class="img"
+                src="./img/team_card4.jpg"
+                width="270"
+                alt="Фото Михаил Ермаков"
+              />
+              <h3 class="h3titleposter">Михаил Ермаков</h3>
+              <p lang="en" class="opisposter">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="foot">
-      <a href="" class="logo_end">Web<span>Studio</span></a>
+
+    <!-- F  O  O  T  E  R  -->
+    <footer class="foot footer container-wide">
+      <!-- <a href="" class="logo_end">Web<span>Studio</span></a> -->
       <address>
+        <a href="./index.html" class="logo_end">Web<span>Studio</span></a>
         <ul>
           <li>
             <a
