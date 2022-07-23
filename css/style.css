@@ -38,7 +38,6 @@ ol {
 .img {
   width: 270px;
   height: 260px;
-  margin-bottom: 30px;
 }
 button {
   cursor: pointer;
@@ -57,34 +56,34 @@ body {
   color: var(--primary-text-color);
   font-family: "Roboto";
   height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* ОФОРМЛЕННЯ */
 /* всі контейнери width: 1170px; */
 .container {
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
-
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  padding-top: 94px;
 }
 
 /* H E A D E R */
 .page-header-container {
+  border-bottom: Solid 1px #ececec;
   height: 80px;
+  max-width: 1600px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.site-nav {
+.site-nav1 {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  align-items: center;
+  padding-left: 94px;
 }
+
 .site-nav.current {
   color: var(--logo-color);
 }
@@ -96,26 +95,29 @@ body {
 .page-nav {
   display: flex;
   align-items: center;
-  padding: 0;
+  width: 1200px;
+  justify-content: space-between;
+
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 /* класс контакти хедера */
 .contact-nav {
   display: flex;
+  padding-left: 300px;
 }
 .contact-items:not(:last-child) {
-  margin-right: 18px;
+  padding-right: 47px;
 }
 
 /* -------END--HEADER------------------------- */
 
 /* всі контейнери width: 1600px; */
-.container-wide {
+.wide {
   max-width: 1630px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 /* КІНЕЦЬ ОФОРМЛЕННЯ */
 
@@ -123,7 +125,7 @@ body {
 .HERO {
   background-color: var(--back-ground-color);
   max-width: 1600px;
-  height: 600px;
+  /* height: 600px; */
   margin: 0 auto;
   padding: 200px 0px;
 }
@@ -176,10 +178,14 @@ body {
 .all-perevagi {
   display: flex;
   justify-content: space-between;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 /* загальний клас для розміщення переваг */
+.team {
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
 .perevaga {
   /* display: flex; */
   /* padding-right: 30px; */
@@ -218,7 +224,7 @@ body {
 .h2-mainpage {
   /* font-family: "Roboto"; */
   display: flex;
-  /* margin-bottom: 50px; */
+  margin-bottom: 50px;
   justify-content: center;
   font-style: normal;
   font-weight: 700;
@@ -230,16 +236,18 @@ body {
 .what_we_doing {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
-  margin-top: 50px;
+  /* margin-bottom: 94px; */
+  /* margin-top: 50px;
+  margin-left: 30px; */
 }
 
 /* оформлення заголовків постерів та опису */
 
 /* фон */
 .comanda {
-  max-width: 1600px;
-  height: 648px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
   background-color: #f5f4fa;
 }
 /* класс для заголовка H2 НАША КОМАНДА */
@@ -247,11 +255,13 @@ body {
   padding-top: 94px;
   padding-bottom: 50px;
 }
+.posterr {
+  padding: 30px;
+  text-align: center;
+}
 
 /* клас всіх карток */
 .kartoteka {
-  /* display: flex; */
-  display: flex;
   justify-content: space-between;
 }
 
@@ -334,8 +344,8 @@ a {
 }
 
 /* header, footer */
+
 .logo {
-  margin-right: 93px;
   color: var(--logo-color);
   font-weight: bold;
   font-size: 26px;
@@ -368,17 +378,21 @@ a {
   font-size: 14px;
   line-height: 102.5625%;
   display: flex;
-  padding: 30px;
+  /* padding: 30px; */
   align-items: center;
 }
 .site-nav-contact-header:hover,
 .site-nav-contact-header:focus {
   color: var(--logo-color);
 }
+button {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
 /* кнопки керування постерами */
 .buttons-head {
-  /* display: flex; */
-
   color: var(--h2-h3-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -395,27 +409,29 @@ a {
   color: var(--white-main-color);
   background-color: var(--back-gtound-key-kolor);
 }
-
-/* назва постерів */
-
+/* задання класу на li кнопок */
+.spisok-button:not(:last-child) {
+  display: flex;
+  margin-right: 8px;
+}
 .Portfolio-name-card {
   font-family: "Roboto";
   margin-top: 20px;
   color: var(--h2-h3-text-color);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
+  font-style: normal;
   line-height: 36px;
   text-align: left;
   margin-left: 24px;
   margin-right: 24px;
-  margin-top: 20px;
 }
 
 /* опис постерів */
 .type-of-work {
   color: var(--color-link);
   /* font-weight: 400; */
-  font-size: 12px;
+  font-size: 16px;
   line-height: 187.5%;
   text-align: left;
   margin-left: 24px;
@@ -426,28 +442,32 @@ a {
 /* footer */
 .logo_end {
   display: flex;
-  margin-top: 60px;
-  margin-bottom: 25px;
+  /* margin-top: 60px; */
+  margin-bottom: 20px;
   color: var(--logo-color);
   font-weight: bold;
   font-size: 26px;
-  font-family: "Raleway";
-  line-height: 2.2475%;
+  font-family: "Raleway", "Sans serif";
+  /* line-height: 2.2475%; */
 }
 .logo_end > span {
   color: var(--white-main-color);
 }
-.foot {
+/* .foot {
   display: flex;
   height: 252px;
-  max-width: 1600px;
+  width: 1600px;
   background-color: var(--back-ground-color);
-}
+} */
 .footer {
-  padding-left: 215px;
-  /* padding-top: 60px; */
+  padding-top: 60px;
   padding-bottom: 60px;
   align-items: center;
+  display: flex;
+  max-width: 1600px;
+}
+.foot {
+  background-color: var(--back-ground-color);
 }
 .logo-foot {
   color: var(--logo-color);
@@ -478,15 +498,17 @@ a {
 /* PORTFOLIO */
 /* клас встановлення межі */
 .hed {
-  border-bottom: Solid 1px #ececec;
+  padding: 94px;
 }
+
 /* розміщення контейнера main */
 .main-portfolio {
-  max-width: 1170px;
-  margin-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1360px;
+  width: 1180px;
 }
 /* клас розміщення фільтрів сторінки */
 .filters {
@@ -494,7 +516,8 @@ a {
   height: 64px;  */
   display: flex;
   margin-bottom: 34px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
+  gap: 8px; */
   justify-content: center;
 }
 /* клас для завдання бордерів */
@@ -507,4 +530,10 @@ a {
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 94px;
+}
+.card {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
