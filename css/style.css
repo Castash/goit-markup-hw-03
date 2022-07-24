@@ -385,7 +385,7 @@ a {
   font-size: 14px;
   line-height: 102.5625%;
   display: flex;
-  /* padding: 30px; */
+  padding: 32px 0px; */
   align-items: center;
 }
 .site-nav-contact-header:hover,
