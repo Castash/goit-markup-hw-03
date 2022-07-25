@@ -103,7 +103,7 @@ body {
   display: flex;
   align-items: center;
   width: 1200px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   margin-left: auto;
   margin-right: auto;
@@ -113,8 +113,9 @@ body {
 
 /* класс контакти хедера */
 .contact-nav {
+  margin-left: auto;
   display: flex;
-  padding-left: 300px;
+  /* padding-left: 300px; */
 }
 .contact-items:not(:last-child) {
   padding-right: 47px;
@@ -199,9 +200,9 @@ body {
   height: 101px;
 }
 /* розсунення елементів навігації */
-.menu-item-1:not(:last-child) {
+/* .menu-item-1:not(:last-child) {
   padding-right: 30px;
-}
+} */
 
 .h3main-page {
   color: var(--h2-h3-text-color);
@@ -241,7 +242,7 @@ body {
 }
 .what_we_doing {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   /* margin-bottom: 94px; */
   /* margin-top: 50px;
   margin-left: 30px; */
@@ -316,12 +317,12 @@ body {
 }
 /* чим замається */
 .opisposter {
-  margin-top: 20px;
-  justify-content: center;
-  font-style: normal;
+  margin-top: 16  px;
+  /* justify-content: center;
+  font-style: normal; */
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.1875%;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--color-link);
 }
@@ -357,6 +358,7 @@ a {
   font-size: 26px;
   font-family: "Raleway";
   line-height: 190.75%;
+  margin-right: 43px;
 }
 .logo > span {
   color: var(--primary-text-color);
@@ -372,6 +374,7 @@ a {
   font-size: 14px;
   line-height: 100%;
   padding: 32px 0px;
+  margin-left: 50px;
 }
 
 .site-nav:hover,
@@ -392,12 +395,14 @@ a {
 .site-nav-contact-header:focus {
   color: var(--logo-color);
 }
-button {
+.button {
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
+.pading-boton-0
+{padding-bottom: 0px;}
 /* кнопки керування постерами */
 .buttons-head {
   color: var(--h2-h3-text-color);
@@ -429,6 +434,7 @@ button {
   font-style: normal;
   line-height: 36px;
   text-align: left;
+  margin-bottom: 4px;
 
   /* margin-left: 24px;
   margin-right: 24px; */
@@ -516,7 +522,7 @@ button {
 /* розміщення контейнера main */
 .main-portfolio {
   padding-top: 94px;
-  /* padding-bottom: 94px; */
+  padding-bottom: 94px;
 }
 /* клас розміщення фільтрів сторінки */
 .filters {
@@ -537,7 +543,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .card {
   background-color: #ffffff;
