@@ -96,8 +96,8 @@ body {
 }
 /* розсунення елементів навігації */
 
-.menu-item:not(:last-child) {
-  margin-right: 40px;
+/* .menu-item:not(:last-child) {
+  margin-right: 40px; */
 }
 .page-nav {
   display: flex;
