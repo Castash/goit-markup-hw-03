@@ -82,7 +82,8 @@ body {
   border-bottom: Solid 1px #ececec;
   height: 80px;
   max-width: 1600px;
-
+  padding-left: 215px;
+  padding-right: 215px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,7 +186,8 @@ body {
 
 .all-perevagi {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  /* justify-content: space-between; */
   /* padding-top: 94px;
   padding-bottom: 94px; */
 }
@@ -312,6 +314,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 10px;
   letter-spacing: 0.03em;
   color: var(--h2-h3-text-color);
 }
@@ -321,7 +324,7 @@ body {
   /* justify-content: center;
   font-style: normal; */
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--color-link);
@@ -415,6 +418,7 @@ a {
   border: #ffffff;
   border-radius: 4px;
   background-color: #f5f4fa;
+  padding: 6px 22px;
 }
 .buttons-head:hover,
 .buttons-head:focus {
